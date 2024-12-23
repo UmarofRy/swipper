@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            width: 148px;
+            height: 44px;
+            border-radius: 50px;
+            border: none;
+            background: #000;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: poppins, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            background: #fff;
+            justify-content: space-around;
+            height: 64px;
+            display: flex;
+            align-items: center;
+        }
+
+        .alar {
+            width: 550px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .left {
+            width: 613px;
+            height: 522px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .boshi {
+            font-family: poppins, sans-serif;
+            font-size: 42px;
+            font-weight: 900;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: white;
+        }
+
+        span {
+            color: black;
+        }
+
+        h1{
+            font-family: Poppins;
+font-size: 70px;
+font-weight: 700;
+line-height: 95.9px;
+letter-spacing: -0.01em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: white;
+position: relative;
+right: 200px;
+        }
+
+        .text {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 45.6px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Swiper -->
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div style="background: linear-gradient(105.54deg, #F4A764 -2.93%, #FFDEC2 72.14%);
+" class="swiper-slide">
+                <div class="left">
+                    <p class="boshi">Exquisite Watches
+                        Choose Luxury, <span>Choose Us</span>
+                    </p>
+                    <p class="text">Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless
+                        Elegance and Precision Craftsmanship
+                        - watch</p>
+
+                        <h1>$430.00</h1>
+
+
+                </div>
+                <img src="./Watches.png" alt="">
+            </div>
+
+
+            <div style="background-color: #555;" class="swiper-slide">
+                <div class="left">
+                    <p class="boshi">Exquisite Watches
+                        Choose Luxury, <span>Choose Us</span>
+                    </p>
+                    <p class="text">Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless
+                        Elegance and Precision Craftsmanship
+                        - watch</p>
+                        <h1>$430.00</h1>
+                </div>
+                <img src="./Watches (1).png" alt="">
+            </div>
+
+
+            <div style="background-color: green;" class="swiper-slide">
+                <div class="left">
+                    <p class="boshi">Exquisite Watches
+                        Choose Luxury, <span>Choose Us</span>
+                    </p>
+                    <p class="text">Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless
+                        Elegance and Precision Craftsmanship
+                        - watch</p>
+                        <h1>$430.00</h1>
+                </div>
+                <img src="./Watches (2).png" alt="">
+            </div>
+
+
+            <div style="background-color: red;" class="swiper-slide">
+                <div class="left">
+                    <p class="boshi">Exquisite Watches
+                        Choose Luxury, <span>Choose Us</span>
+                    </p>
+                    <p class="text">Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless
+                        Elegance and Precision Craftsmanship
+                        - watch</p>
+                        <h1>$430.00</h1>
+                </div>
+                <img src="./Watches (3).png" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+</body>
+
+</html>
